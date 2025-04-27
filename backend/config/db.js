@@ -3,7 +3,7 @@ const colors = require("colors");
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect("mongodb+srv://anniagg2003:annanay123456@chat-app.k7eirmx.mongodb.net/?retryWrites=true&w=majority&appName=chat-app", {
+    const conn = await mongoose.connect("mongodb://localhost:27017/chat", {
       useCreateIndex:true,
       useNewUrlParser: true,
       useUnifiedTopology: true,
